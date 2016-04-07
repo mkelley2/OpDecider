@@ -9,6 +9,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var port = process.env.PORT || 5000
+
+app.set('port',port);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -56,5 +59,8 @@ app.use(function(err, req, res, next) {
   });
 });
 
+var server = app.listen(port, function(){
+  console.log("Server is running on port 5000");
+});
 
 module.exports = app;
