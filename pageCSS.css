@@ -12,6 +12,22 @@ img {
   width: 100%;
 }
 
+#TR {
+  color: Red;
+}
+
+#VS {
+  color: Purple;
+}
+
+#NC {
+  color: Blue;
+}
+
+#none {
+  color: Grey;
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #4CAF50;
@@ -40,11 +56,12 @@ img {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
