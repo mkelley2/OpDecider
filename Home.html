@@ -24,7 +24,23 @@
       }
     </script>
     <script language="javascript" type="text/javascript">
-      var scrt_var = "NC.html"; 
+      var scrt_var;
+      function generate(){
+        var rand = Math.floor(Math.random() * 3);
+        console.log(rand)
+        
+        if(rand==0){
+          scrt_var = "NC.html";
+        }
+        if(rand==1){
+          scrt_var = "TR.html";
+        }
+        if(rand==2){
+          scrt_var = "VS.html";
+        }
+        return scrt_var;
+      }
+      generate();
     </script>
     <style>
       body {background-image:url(img/ECUS-Logo.png);
